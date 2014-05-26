@@ -1,5 +1,5 @@
 {
-    "name": "cubalider/sms-queue",
+    "name": "cubalider/sms-queue-as-abstract",
     "description": "Provides an abstraction for sms queues",
     "type": "library",
     "keywords": ["sms", "queue"],
