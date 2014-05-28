@@ -23,7 +23,7 @@ interface BulkManagerInterface
      * @return mixed
      */
     public function approach();
-    
+
     /**
      * Removes the bulk at first position.
      *
