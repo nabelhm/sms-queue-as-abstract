@@ -24,4 +24,13 @@ interface MessageManagerInterface
      * @return mixed The messages
      */
     public function pop($amount);
+
+    /**
+     * Returns the amount of messages remaining for given bulk.
+     * It returns false if bulk doest' exist
+     *
+     * @param mixed $bulk
+     * @return int|false
+     */
+    public function estimate($bulk);
 }
