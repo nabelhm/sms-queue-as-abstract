@@ -8,9 +8,10 @@ namespace Cubalider\Component\Sms\Manager;
 interface BulkManagerInterface
 {
     /**
-     * Gets the bulk with first position
+     * Removes the bulk at first position.
      *
-     * @return mixed
+     * @internal
+     * @return void
      */
     public function pop();
 }
