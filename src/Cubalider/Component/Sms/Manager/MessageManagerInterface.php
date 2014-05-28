@@ -29,6 +29,7 @@ interface MessageManagerInterface
      * Returns the amount of messages remaining for given bulk.
      * It returns false if bulk doest' exist
      *
+     * @api
      * @param mixed $bulk
      * @return int|false
      */
