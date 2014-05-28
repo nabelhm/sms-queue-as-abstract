@@ -8,13 +8,12 @@ namespace Cubalider\Component\Sms\Manager;
 interface BulkManagerInterface
 {
     /**
-     * Adds given bulk into the last position.
+     * Adds a bulk into the last position.
      *
      * @internal
-     * @param mixed $bulk
-     * @return void
+     * @return mixed The already created bulk
      */
-    public function push($bulk);
+    public function push();
 
     /**
      * Gets the bulk at first position.
