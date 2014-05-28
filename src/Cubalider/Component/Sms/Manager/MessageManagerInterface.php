@@ -8,8 +8,9 @@ namespace Cubalider\Component\Sms\Manager;
 interface MessageManagerInterface
 {
     /**
-     * Pushes given messages into a new bulk
+     * Pushes given messages.
      *
+     * @api
      * @param array $messages
      * @return void
      */
