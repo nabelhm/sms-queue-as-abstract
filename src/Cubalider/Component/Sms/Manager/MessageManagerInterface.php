@@ -16,13 +16,11 @@ interface MessageManagerInterface
     public function push($messages);
 
     /**
-     * Pops from the given bulk, the given amount of messages
-     * If no amount is set, it pops all messages
-     * If the bulk is empty, it deletes the bulk and returns false
+     * Pops given amount of messages.
      *
-     * @param mixed     $bulk
+     * @api
      * @param integer   $amount
-     * @return mixed
+     * @return mixed The messages
      */
-    public function pop($bulk, $amount = null);
+    public function pop($amount);
 }
