@@ -1,6 +1,6 @@
 <?php
 
-namespace Cubalider\Component\Sms\Manager;
+namespace Cubalider\Component\Sms\Model;
 
 /**
  * @author Yosmany Garcia <yosmanyga@gmail.com>
