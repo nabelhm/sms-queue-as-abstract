@@ -2,27 +2,33 @@
 
 namespace Cubalider\Component\Sms\Model;
 
-use Cubalider\Component\Mobile\Model\MobileInterface;
+use Cubalider\Component\Mobile\Model\Mobile;
 
 /**
+ * @author Yusliel Garcia <yuslielg@gmail.com>
  * @author Yosmany Garcia <yosmanyga@gmail.com>
  */
-class Message implements MessageInterface
+class Message
 {
     /**
-     * @var BulkInterface
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var Bulk
      */
     private $bulk;
-
+    
     /**
-     * @var MobileInterface
-     */
-    private $sender;
-
-    /**
-     * @var MobileInterface
+     * @var Mobile
      */
     private $receiver;
+
+    /**
+     * @var Mobile
+     */
+    private $sender;
 
     /**
      * @var string
@@ -30,15 +36,23 @@ class Message implements MessageInterface
     private $text;
 
     /**
-     * @param BulkInterface $bulk
+     * @return integer
      */
-    public function setBulk(BulkInterface $bulk)
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param Bulk $bulk
+     */
+    public function setBulk(Bulk $bulk)
     {
         $this->bulk = $bulk;
     }
 
     /**
-     * @return BulkInterface
+     * @return Bulk
      */
     public function getBulk()
     {
@@ -46,35 +60,35 @@ class Message implements MessageInterface
     }
 
     /**
-     * @param MobileInterface $sender
+     * @param Mobile $receiver
      */
-    public function setSender(MobileInterface $sender)
-    {
-        $this->sender = $sender;
-    }
-
-    /**
-     * @return MobileInterface
-     */
-    public function getSender()
-    {
-        return $this->sender;
-    }
-
-    /**
-     * @param MobileInterface $receiver
-     */
-    public function setReceiver(MobileInterface $receiver)
+    public function setReceiver(Mobile $receiver)
     {
         $this->receiver = $receiver;
     }
 
     /**
-     * @return MobileInterface
+     * @return Mobile
      */
     public function getReceiver()
     {
         return $this->receiver;
+    }
+
+    /**
+     * @param Mobile $sender
+     */
+    public function setSender(Mobile $sender)
+    {
+        $this->sender = $sender;
+    }
+
+    /**
+     * @return Mobile
+     */
+    public function getSender()
+    {
+        return $this->sender;
     }
 
     /**
