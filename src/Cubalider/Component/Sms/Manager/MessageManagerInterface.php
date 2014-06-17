@@ -2,8 +2,8 @@
 
 namespace Cubalider\Component\Sms\Manager;
 
-use Cubalider\Component\Sms\Manager\MessageInterface;
-use Cubalider\Component\Sms\Manager\BulkInterface;
+use Cubalider\Component\Sms\Model\Message;
+use Cubalider\Component\Sms\Model\Bulk;
 
 /**
  * @author Yosmany Garcia <yosmanyga@gmail.com>
@@ -14,8 +14,8 @@ interface MessageManagerInterface
      * Pushes given messages into a new bulk.
      *
      * @api
-     * @param MessageInterface[] $messages
-     * @return BulkInterface The already created bulk
+     * @param Message[] $messages
+     * @return Bulk The already created bulk
      */
     public function push($messages);
 
@@ -23,8 +23,8 @@ interface MessageManagerInterface
      * Pops given amount of messages.
      *
      * @api
-     * @param integer             $amount
-     * @return MessageInterface[] The messages
+     * @param integer $amount
+     * @return Message[] The messages
      */
     public function pop($amount);
 
@@ -33,8 +33,8 @@ interface MessageManagerInterface
      * It returns false if bulk does not exist.
      *
      * @api
-     * @param BulkInterface $bulk
+     * @param Bulk $bulk
      * @return int|false
      */
-    public function estimate(BulkInterface $bulk);
+    public function estimate(Bulk $bulk);
 }
