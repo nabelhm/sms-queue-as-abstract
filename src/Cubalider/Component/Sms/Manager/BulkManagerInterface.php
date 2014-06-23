@@ -2,7 +2,7 @@
 
 namespace Cubalider\Component\Sms\Manager;
 
-use Cubalider\Component\Sms\Manager\BulkInterface;
+use Cubalider\Component\Sms\Model\Bulk;
 
 /**
  * @author Yosmany Garcia <yosmanyga@gmail.com>
@@ -13,7 +13,7 @@ interface BulkManagerInterface
      * Adds a bulk into the last position.
      *
      * @internal
-     * @return BulkInterface The already created bulk
+     * @return Bulk The already created bulk
      */
     public function push();
 
@@ -21,7 +21,7 @@ interface BulkManagerInterface
      * Gets the bulk at first position.
      *
      * @internal
-     * @return BulkInterface
+     * @return Bulk
      */
     public function approach();
 
