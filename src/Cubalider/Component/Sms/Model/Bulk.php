@@ -8,17 +8,17 @@ namespace Cubalider\Component\Sms\Model;
 class Bulk
 {
     /**
-     * @var integer
+     * @var int
      */
     private $id;
 
     /**
-     * @var integer
+     * @var int
      */
     private $position;
 
     /**
-     * @param integer $id
+     * @param int $id
      */
     public function setId($id)
     {
@@ -26,7 +26,7 @@ class Bulk
     }
 
     /**
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -34,7 +34,7 @@ class Bulk
     }
 
     /**
-     * @param integer $position
+     * @param int $position
      */
     public function setPosition($position)
     {
@@ -42,7 +42,7 @@ class Bulk
     }
 
     /**
-     * @return integer
+     * @return int
      */
     public function getPosition() 
     {
