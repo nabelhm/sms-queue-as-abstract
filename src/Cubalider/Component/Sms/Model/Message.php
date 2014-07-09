@@ -11,7 +11,7 @@ use Cubalider\Component\Mobile\Model\Mobile;
 class Message
 {
     /**
-     * @var integer
+     * @var int
      */
     private $id;
 
@@ -36,7 +36,7 @@ class Message
     private $text;
 
     /**
-     * @return integer
+     * @return int
      */
     public function getId()
     {

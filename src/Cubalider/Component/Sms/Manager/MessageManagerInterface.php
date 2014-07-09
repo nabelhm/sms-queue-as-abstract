@@ -23,7 +23,7 @@ interface MessageManagerInterface
      * Pops given amount of messages.
      *
      * @api
-     * @param integer $amount
+     * @param int $amount
      * @return Message[] The messages
      */
     public function pop($amount);
