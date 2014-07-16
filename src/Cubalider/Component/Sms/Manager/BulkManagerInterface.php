@@ -13,6 +13,7 @@ interface BulkManagerInterface
      * Adds a bulk into the last position.
      *
      * @internal
+     *
      * @return Bulk The already created bulk
      */
     public function push();
@@ -21,6 +22,7 @@ interface BulkManagerInterface
      * Gets the bulk at first position.
      *
      * @internal
+     *
      * @return Bulk
      */
     public function approach();
@@ -29,6 +31,7 @@ interface BulkManagerInterface
      * Removes the bulk at first position.
      *
      * @internal
+     *
      * @return void
      */
     public function pop();

@@ -14,7 +14,9 @@ interface MessageManagerInterface
      * Pushes given messages into a new bulk.
      *
      * @api
+     *
      * @param Message[] $messages
+     *
      * @return Bulk The already created bulk
      */
     public function push($messages);
@@ -23,7 +25,9 @@ interface MessageManagerInterface
      * Pops given amount of messages.
      *
      * @api
+     *
      * @param int $amount
+     *
      * @return Message[] The messages
      */
     public function pop($amount);
@@ -33,7 +37,9 @@ interface MessageManagerInterface
      * It returns false if bulk does not exist.
      *
      * @api
+     *
      * @param Bulk $bulk
+     *
      * @return int|false
      */
     public function estimate(Bulk $bulk);
