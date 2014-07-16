@@ -31,8 +31,6 @@ interface BulkManagerInterface
      * Removes the bulk at first position.
      *
      * @internal
-     *
-     * @return void
      */
     public function pop();
 }
